@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_margin="@dimen/dimen_4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:id="@+id/template_frame">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_resume"
+            android:src="@drawable/resume_one"/>
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rounded_corner_bg_primery_color"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:padding="@dimen/dimen_8dp"
+                android:id="@+id/tv_tot_downloads"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:text="45 Downloads"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add_24dp"
+                android:id="@+id/fab_preview_resume"
+                android:layout_toRightOf="@id/tv_tot_downloads"
+                app:fabSize="mini" />
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

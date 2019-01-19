@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/profile_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="2dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:scaleType="fitXY"
+                    android:minWidth="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    app:srcCompat="@drawable/ic_user"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.601"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+            </android.support.constraint.ConstraintLayout>
+            <RelativeLayout
+                android:layout_below="@id/profile_section"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="@dimen/dimen_2dp"
+                    android:layout_height="@dimen/dimen_2dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible"
+                    android:id="@+id/separator"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ed_stu_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="text|textNoSuggestions"
+
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@id/separator"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:textAlignment="viewStart"
+
+                    android:textSize="@dimen/dimen_16sp"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ed_stu_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:layout_toRightOf="@+id/separator"
+                    android:inputType="text|textNoSuggestions"
+
+                    android:singleLine="true"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:textAlignment="viewStart"
+
+                    android:textSize="@dimen/dimen_16sp"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ed_mailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:layout_below="@+id/ed_stu_first_name"
+                    app:met_clearButton="true"
+                    app:met_errorColor="@android:color/holo_red_dark"
+                    android:textAlignment="viewStart"
+                    app:met_helperText="@string/sample_mail_id"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ed_phno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobileno"
+                    android:inputType="number|textNoSuggestions"
+                    android:layout_below="@+id/ed_mailid"
+                    app:met_clearButton="true"
+                    android:maxLength="10"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:met_errorColor="@android:color/holo_red_dark"
+                    app:met_floatingLabel="highlight"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:textAlignment="viewStart"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ed_stu_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enteraddress"
+                    android:inputType="text|textNoSuggestions"
+                    android:layout_below="@+id/ed_phno"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:textAlignment="viewStart"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_first_next"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/dimen_16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ed_stu_address"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/next"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rectangle_background_selected"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

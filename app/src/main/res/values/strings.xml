@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ResumeBuilderProject</string>
+    <string name="basic_templates">Basic Templates</string>
+    <string name="modern_templates">Modern Templates</string>
+    <string name="resume_builder">Resume Builder</string>
+    <string name="Dialog">dialog</string>
+    <string name="resume_preview">Resume Preview</string>
+    <string name="edit_resume">Edit Resume</string>
+    <string name="name">Enter Name *</string>
+    <string name="email">Enter Mail Id*</string>
+    <string name="mobileno">Enter Mobile No*</string>
+    <string name="enteraddress">Enter Address*</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="next">Next</string>
+    <string name="sample_mail_id">Ex: abc@gmail.com</string>
+    <string name="skills_education"><![CDATA[Skills & Area of Interest]]></string>
+    <string name="skills_count">4 Skills</string>
+    <string name="skills_sub_title">Show Case your Skills</string>
+    <string name="enter_skills">Enter Skills</string>
+    <string name="add_skills">Add Skills</string>
+    <string name="education_details">Education Details</string>
+    <string name="hint_degree">Enter Degree Name</string>
+    <string name="hint_institutename">Enter School/College/University Name</string>
+    <string name="hint_mark">Enter Your Mark/ Grade/ Percentage</string>
+    <string name="hint_yearofpassing">Year of Passing</string>
+    <string name="save">Save</string>
+</resources>
